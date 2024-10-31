@@ -38,4 +38,4 @@ cd <project-directory>
 
 ## Deployment
 
-The project is deployed on Netlify and can be accessed at the following URL: [Netlify Deployment](#)
+The project is deployed on Netlify and can be accessed at the following URL: [Netlify Deployment](https://tubular-pixie-260d4f.netlify.app/)
