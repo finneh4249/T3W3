@@ -49,18 +49,19 @@ renderData()
 
 function addEventListenersToRemovalButtons() {
     document.querySelectorAll(".driverListItem").forEach(listItem => {
-        listItem.addEventListener("mouseover", (event) => {
-            button = listItem.querySelector(".driverRemovalButton")
+        listItem.addEventListener("mouseover", () => {
+            const button = listItem.querySelector(".driverRemovalButton")
             button.style.display = "flex"
         })
-        listItem.addEventListener("mouseout", (event) => {
-            button = listItem.querySelector(".driverRemovalButton")
+        listItem.addEventListener("mouseout", () => {
+            const button = listItem.querySelector(".driverRemovalButton")
             button.style.display = "none"
         })
     })
     document.querySelectorAll(".driverRemovalButton").forEach(button => {
-        button.addEventListener("click", (event) => {
-            removeDriver(event, button.id.split("-")[1])
+        button.addEventListener("click", () => {
+            const driver = button.id.split("-")[1]
+            removeDriver(driver)
         })
     })
 }
@@ -86,14 +87,8 @@ function createDriverRemovalButton(driver) {
 }
 
 function addDriver(driverInput) {
-    const form = document.getElementById("driverInput")
+    if (!driverInput) return
 
-    let isValidForm = form.checkValidity()
-
-    while(!isValidForm){
-        form.reportValidity()
-        return
-    }
     dataArray.push(driverInput)
     renderData()
 }
