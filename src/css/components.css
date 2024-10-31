@@ -1,0 +1,66 @@
+a {
+    color: var(--clr-primary-a0);
+    text-decoration: none;
+  }
+
+a:hover{
+    color: var(--clr-primary-a10);
+}
+
+a:focus{
+    color: var(--clr-primary-a20);
+}
+
+a:active{
+    color: var(--clr-primary-a30);
+}
+
+.box {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    width: 95%;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+    background-color: var(--clr-neutral-a0);
+    gap: 1rem;
+  }
+
+ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(13ch, 1fr));
+    gap: 1rem;
+  }
+
+li{
+    display: flex;
+    text-align: center;
+    padding: 1rem;
+    background-color: var(--clr-neutral-a10);
+    border-radius: 12px;
+    box-shadow: 0px 2px 4px -1px rgba(0, 0, 0, 0.2),
+      0px 4px 5px 0px rgba(0, 0, 0, 0.14), 0px 1px 10px 0px rgba(0, 0, 0, 0.12);
+}
+
+.driverRemovalButton{
+    background-color: var(--clr-danger-a0);
+    color: var(--clr-neutral-a0);
+    border: none;
+    aspect-ratio: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    padding: 0.75rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.driverRemovalButton:hover{
+    background-color: var(--clr-danger-a10);
+}

@@ -1,0 +1,15 @@
+
+/* Defines the cascading layers */
+@layer reset, base, components, utilities, main;
+
+/* Imports the CSS files and assigns them to layers */
+@import url(./reset.css) layer(reset);
+@import url(./base.css) layer(base);
+@import url(./components.css) layer(components);
+@import url(./utilities.css) layer(utilities);
+
+/* This is the main layer for overriding styles */
+@layer main {
+    /* Your CSS Overrides Here */
+
+}
