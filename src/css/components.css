@@ -64,3 +64,34 @@ li{
 .driverRemovalButton:hover{
     background-color: var(--clr-danger-a10);
 }
+
+#driverInput {
+    background-color: var(--clr-neutral-a10);
+    border: none;
+    border-radius: 12px;
+    padding: 0.5rem;
+    font-size: 1rem;
+    color: var(--clr-neutral-a50);
+    text-align: center;
+    outline: none;
+    transition: box-shadow 0.3s;
+}
+
+#driverInput:focus {
+    box-shadow: var(--clr-primary-a0) 0px 2px 4px -1px, var(--clr-primary-a10) 0px 4px 5px 0px, var(--clr-primary-a20) 0px 1px 10px 0px;
+}
+
+#driverInputButton{
+    background-color: var(--clr-primary-a0);
+    color: var(--clr-neutral-a0);
+    border: none;
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 1rem;
+    
+}
+
+#driverInputButton:hover{
+    background-color: var(--clr-primary-a10);
+}
+}
